@@ -13,7 +13,7 @@ const Navbar = () => {
         
     >
         <Link to='/' alt="logo" style={{width:'48px', height:'48px', margin:'0 20px'}}>
-        <img src={logo}/>
+        <img src={logo} alt="logo"/>
         </Link>
         <Stack
             direction="row"
