@@ -1,7 +1,7 @@
 import React from 'react'
 import { Stack, Typography } from '@mui/material'
 
-import Icon from '../assets/icons/gym.png'
+import Icon from '../assets/icons/gym2.jpg'
 const BodyPart = ({ item, bodyPart, setBodyPart }) => {
     return (
         < Stack
@@ -20,6 +20,7 @@ const BodyPart = ({ item, bodyPart, setBodyPart }) => {
             }}
         >
             <img src={Icon} alt='dumbbell' style={{ width: '40px', height: '40px' }} />
+            <Typography fontSize='20px' fontWeight='bold' textTransform='capitalize'>{item}</Typography>
         </Stack>
     )
 }
