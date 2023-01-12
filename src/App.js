@@ -6,6 +6,7 @@ import Navbar from './components/Navbar';
 import Home from './Pages/Home';
 import ExerciseDetails from './Pages/ExerciseDetails';
 import Footer from './components/Footer';
+import AllExercises from './Pages/AllExercises';
 const App = () => {
   return (
     <Box width="400px" sx={{ width:{xl:'1488px'}}} m="auto">
@@ -13,6 +14,7 @@ const App = () => {
         <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/exercise/:id" element={<ExerciseDetails />} />
+            <Route path="/exercise" element={<AllExercises />} />
         </Routes>
         <Footer />
     </Box>

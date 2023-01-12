@@ -5,7 +5,7 @@ import { Box, Stack, Typography } from '@mui/material';
 import { exerciseOptions, fetchData } from '../utils/fetchData';
 import ExerciseCard from './ExerciseCard';
 
-const Exercises = ({exercises, setExercises, bodyPart}) => {
+const Exercises = ({exercises, setExercises, bodyPart, type}) => {
   const [currentPage, setCurrentPage] = useState(1)
   const exercisesPerPage = 9;
   const indexOfLastExercise = currentPage * exercisesPerPage
@@ -42,7 +42,7 @@ const Exercises = ({exercises, setExercises, bodyPart}) => {
       p="20px"
     >
       <Typography variant='h3' mb="46px">
-        Showing Results
+        {type}
       </Typography>
       <Stack
         direction='row'
