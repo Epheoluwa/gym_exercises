@@ -125,7 +125,7 @@ body {
     }
   
     .hero-banner-box {
-      display: none;
+      display: none !important;
     }
   
     .exercise-card {
