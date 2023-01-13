@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import { Box } from '@mui/material'
 import Exercises from '../components/Exercises'
+import ExerciseSearch from '../components/ExerciseSearch';
+
 
 
 const AllExercises = () => {
@@ -9,6 +11,7 @@ const AllExercises = () => {
 
     return (
         <Box>
+            <ExerciseSearch setExercises={setExercises} bodyPart={bodyPart} setBodyPart={setBodyPart} />
             <Exercises exercises={exercises} setExercises={setExercises} bodyPart={bodyPart} type='All Exercises' />
         </Box>
     )
